@@ -1,0 +1,5 @@
+{
+  "name": "Disbord",
+  "description": "A visually faithful clone of the Discord user interface, built with React, TypeScript, and Tailwind CSS. This application showcases a typical Discord layout including server navigation, channel lists, a central chat area, and an online user list, populated with static mock data.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --accent-color: #5865F2;
+        --chat-background-image: none;
+        --chat-background-color: #36393f; /* gray-700 */
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Light Theme Overrides */
+      .light-theme {
+        --chat-background-color: #f2f3f5;
+      }
+      .light-theme, .light-theme body {
+        background-color: #f2f3f5 !important; /* Lighter gray for main background */
+        color: #2e3338; /* Darker text */
+      }
+      .light-theme .bg-gray-900 { background-color: #e3e5e8 !important; }
+      .light-theme .bg-gray-800, .light-theme .bg-gray-800\/60 { background-color: #ebedef !important; }
+      .light-theme .bg-gray-700, .light-theme .bg-gray-700\/80 { background-color: #f2f3f5 !important; }
+      .light-theme .bg-gray-600, .light-theme .bg-gray-600\/50, .light-theme .bg-black\/20 { background-color: #e3e5e8 !important; }
+      
+      .light-theme .text-white { color: #060607 !important; }
+      .light-theme .text-gray-200 { color: #2e3338 !important; }
+      .light-theme .text-gray-300 { color: #3f454c !important; }
+      .light-theme .text-gray-400 { color: #5c646d !important; }
+      .light-theme .text-gray-500 { color: #747f8d !important; }
+      
+      .light-theme .border-gray-900\/50 { border-color: rgba(205, 207, 210, 0.5) !important; }
+      .light-theme .border-gray-800\/60 { border-color: rgba(220, 221, 222, 0.6) !important; }
+      
+      .light-theme input[type="text"], .light-theme textarea {
+        background-color: #e3e5e8 !important;
+        color: #060607 !important;
+      }
+      .light-theme ::placeholder {
+        color: #5c646d !important;
+      }
+      
+      .light-theme .hover\:bg-gray-600\/50:hover { background-color: #dde0e3 !important; }
+      .light-theme .hover\:bg-gray-700:hover { background-color: #dde0e3 !important; }
+      .light-theme .hover\:bg-gray-700\/50:hover { background-color: #dde0e3 !important; }
+      .light-theme .bg-gray-900\/50 { background-color: rgba(227, 229, 232, 0.5) !important; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
